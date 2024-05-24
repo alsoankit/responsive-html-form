@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.description {
+  display: flex;
+}
+.text-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5200ff;
+  color: white;
+  padding: 7rem 4rem;
+  padding-bottom: 4rem;
+}
+.dark {
+  width: 3rem;
+  padding: 1rem;
+  background-color: #4300d2;
+}
+div.text-area h1 {
+  font-weight: bold;
+  font-size: 4.6em;
+}
+div.text-area p {
+  font-weight: 400;
+  font-size: 2.2em;
+  line-height: 153.5%;
+}
+.signup-area {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 3rem;
+}
+div.signup-area p {
+  font-size: 2rem;
+}
+#one {
+  margin-bottom: 3rem;
+}
+input {
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+a {
+  align-self: flex-end;
+}
+button {
+  background-color: #5200ff;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 8rem;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+}
+@media screen and (min-width:850px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .signup-area{
+    width: 50%;
+  }
+  .description{
+    width: 50%;
+  }
+}
